@@ -1,0 +1,423 @@
+@media (max-width: 75em) {
+  html {
+    /*9px/16px=0.5625*/
+    font-size: 56.25%;
+  }
+
+  .container {
+    width: unset;
+  }
+
+  .container--1 {
+    width: unset;
+  }
+
+  .nav-lists {
+    margin-left: 24rem;
+  }
+
+  .card-lists li {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 63em) {
+  html {
+    font-size: 50%;
+  }
+
+  .header-heading {
+    grid-column: 1/5;
+  }
+
+  .header-description {
+    grid-column: 1/5;
+  }
+
+  .btn--secondary:link,
+  .btn--secondary:visited {
+    grid-column: 3/5;
+  }
+
+  .mobile-nav-icon {
+    display: block;
+  }
+
+  .menu--icon {
+    display: block;
+  }
+
+  .nav-lists {
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.842);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-open .nav-lists {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.982);
+    width: 100%;
+    height: 100vh;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    transition: all 0.3s;
+  }
+
+  .nav-open .btn--nav:link,
+  .btn--nav:visited {
+    font-size: 3rem;
+    color: #fff;
+    background-color: #868e96;
+  }
+
+  .nav-open .btn--nav:hover,
+  .btn--nav:active {
+    background-color: #868e969b;
+    color: #fff;
+  }
+
+  .nav-open .nav-list a {
+    font-size: 3rem;
+    color: #000;
+  }
+
+  .nav-open .mobile-nav-icon {
+    display: block;
+  }
+
+  .nav-open .close--icon {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    color: #000;
+    /* z-index: 2; */
+  }
+
+  .nav-open .menu--icon {
+    display: none;
+  }
+}
+
+@media (max-width: 55em) {
+  .ex--des--heading {
+    font-size: 2.4rem;
+  }
+  .ex--des--des {
+    font-size: 1.2rem;
+  }
+
+  .description-link:link,
+  .description-link:visited {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-flex {
+    grid-template-columns: 1fr 1fr;
+    gap: 6.4rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5.4rem;
+  }
+
+  .contact {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .about {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .support {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+
+  .logo {
+    top: 88%;
+  }
+
+  .logo-heading {
+    top: 92%;
+  }
+}
+
+@media (max-width: 47em) {
+  .header-container {
+    width: unset;
+  }
+
+  .header-heading {
+    grid-column: 1/9;
+  }
+
+  .header-description {
+    grid-column: 1/9;
+  }
+
+  .btn--primary:link,
+  .btn--primary:visited {
+    grid-column: 1/5;
+  }
+
+  .btn--secondary:link,
+  .btn--secondary:visited {
+    grid-column: 5/9;
+  }
+
+  .ex--img--description {
+    padding: 1.6rem 2.4rem 0 2.4rem;
+  }
+
+  .description-link:link {
+    display: none;
+  }
+
+  .ex--des--des {
+    margin-bottom: 0;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+
+  .pricing-card-vip {
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 50%;
+  }
+
+  .logo-heading {
+    left: 8%;
+  }
+}
+
+@media (max-width: 38em) {
+  .header-container {
+    text-align: center;
+    margin-top: 10rem;
+  }
+
+  .header-heading {
+    grid-column: 1/-1;
+  }
+
+  .header-description {
+    grid-column: 1/-1;
+  }
+
+  .header-btn-flex {
+    align-items: center;
+    justify-content: center;
+  }
+  .exhibition-images {
+    gap: 0;
+  }
+
+  .exhibition-images:nth-child(odd) {
+    gap: 2.4rem;
+  }
+  .ex--img {
+    grid-column: 1/-1;
+  }
+
+  .ex--img--description {
+    grid-column: 1/-1;
+    margin-bottom: 4rem;
+  }
+
+  .ex--img2 {
+    grid-row: 3/4;
+  }
+
+  .ex--img4 {
+    grid-row: 7/8;
+  }
+
+  .ex--img6 {
+    grid-row: 11/12;
+  }
+
+  .exhibition-title {
+    /* margin-bottom: 2.4rem; */
+    text-align: center;
+  }
+
+  .ex--des--heading {
+    font-size: 2.8rem;
+  }
+
+  .ex--des--des {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .ex--img--description {
+    padding: 2.4rem 3.2rem;
+    margin-bottom: 5.4rem;
+  }
+
+  .section-exhibition {
+    padding-bottom: 2.4rem;
+  }
+
+  .description-link:link {
+    display: inline-block;
+    font-size: 1.8rem;
+  }
+
+  .location-flex {
+    flex-direction: column;
+  }
+
+  .testimonial-flex {
+    grid-template-columns: 1fr;
+    padding: 4.2rem;
+    gap: 8rem;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    padding: 2.4rem 4.8rem;
+    gap: 5.4rem;
+  }
+
+  .pricing-card-vip {
+    width: 100%;
+  }
+
+  .pricing-heading {
+    text-align: center;
+  }
+
+  .pricing-description {
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .contact {
+    grid-column: 1/3;
+  }
+
+  .about {
+    grid-column: 3/5;
+  }
+
+  .support {
+    grid-column: 5/7;
+  }
+
+  .social-flex {
+    grid-column: 3/5;
+  }
+}
+
+@media (max-width: 32em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .section-testimonials {
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+
+  .testimonial-flex {
+    padding: 0;
+  }
+
+  .logo-heading {
+    left: 10%;
+  }
+  .testimonial-card::after {
+    top: -62%;
+  }
+  .pricing-cards {
+    padding: 0;
+  }
+}
+
+@media (max-width: 25em) {
+  .header-container {
+    padding: 10rem 3.2rem;
+  }
+
+  .logo-heading {
+    left: 13%;
+  }
+  .pricing-cards {
+    padding: 0;
+  }
+  .btn:link,
+  .btn:visited {
+    /* font-size: 1.2rem; */
+    padding: 1.6rem 3rem;
+  }
+
+  .btn--secondary:link,
+  .btn--secondary:visited {
+    /* font-size: 1.2rem; */
+    padding: 1.6rem 3rem;
+  }
+}
+
+@media (max-width: 23em) {
+  .header-container {
+    padding: 10rem 2.4rem;
+  }
+
+  .pricing-cards {
+    padding: 0;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.2rem;
+    padding: 1.6rem 3rem;
+  }
+
+  .btn--secondary:link,
+  .btn--secondary:visited {
+    font-size: 1.2rem;
+    padding: 1.6rem 3rem;
+  }
+
+  .pricing-cards {
+    padding: 0;
+  }
+
+  .logo-heading {
+    left: 15%;
+  }
+}
